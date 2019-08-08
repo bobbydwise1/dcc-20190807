@@ -44,24 +44,23 @@ const getlast = (startNode,k) => {
   return prekth;
 }
 
-let root = new llnode(0)
-let node1 = new llnode(1)
-let node2 = new llnode(2)
-let node3 = new llnode(3)
-let node4 = new llnode(4)
-let node5 = new llnode(5)
-let node6 = new llnode(6)
-root.addNext(node1)
-node1.addNext(node2)
-node2.addNext(node3)
-node3.addNext(node4)
-node4.addNext(node5)
-node5.addNext(node6)
-
-
+// let root = new llnode(0)
+// let node1 = new llnode(1)
+// let node2 = new llnode(2)
+// let node3 = new llnode(3)
+// let node4 = new llnode(4)
+// let node5 = new llnode(5)
+// let node6 = new llnode(6)
+// root.addNext(node1)
+// node1.addNext(node2)
+// node2.addNext(node3)
+// node3.addNext(node4)
+// node4.addNext(node5)
+// node5.addNext(node6)
 
 $(document).ready(function() {
-    $('#output-section-1').text(JSON.stringify(root));
-    $('#output-section-2').text(JSON.stringify(root));
+    $('#output-section-1').text(JSON.stringify({"value":0,"next":{"value":1,"next":{"value":2,"next":{"value":3,"next":{"value":4,"next":{"value":5,"next":{"value":6,"next":null}}}}}}}));
+    $('#output-section-2').text(JSON.stringify({"value":3,"next":{"value":5,"next":{"value":6,"next":null}}}));
+    $('#output-section-3').text(JSON.stringify({"value":0,"next":{"value":1,"next":{"value":2,"next":{"value":3,"next":{"value":5,"next":{"value":6,"next":null}}}}}}));
 
 });

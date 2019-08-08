@@ -24,7 +24,28 @@
 
     <p>Do this in constant space and in one pass.</p>
     <br>
-    <p><b>Answer*:</b></p>
-    <p><b>: <span id='output-section-1'></span></b></p>
+    <p><b>Answer:</b></p>
+    <p>Checkout the script.js file for the buissiness logic.<p>
+    <p>Suppose we have a linked list node which is represented by a javascript object {"value": interger, "next": nextNode}.  If we create a simple one with length 6 (not counting root), we end up with:<br><b><span id='output-section-1'></span></b></p>
+    <p>If k = 2, we would get rid of the 2nd from last, which should be the node with value 4.  The <b>getlast</b> function finds the kth term and removes it: <br><b><span id='output-section-2'></span></b></p>
+    <p>The final result is: <br><b><span id='output-section-3'></span></b></p>
+    <p>You can create your own linked list by opening up your browser's console, and typing (or copy-paste) the following:<p>
+    <p style="font-family:'courier'"><b>let root = new llnode(0)</b></p>
+    <p style="font-family:'courier'"><b>let node1 = new llnode(1)</b></p>
+    <p style="font-family:'courier'"><b>let node2 = new llnode(2)</b></p>
+    <p style="font-family:'courier'"><b>let node3 = new llnode(3)</b></p>
+    <p style="font-family:'courier'"><b>let node4 = new llnode(4)</b></p>
+    <p style="font-family:'courier'"><b>let node5 = new llnode(5)</b></p>
+    <p style="font-family:'courier'"><b>let node6 = new llnode(6)</b></p>
+    <p style="font-family:'courier'"><b>//you can add more or less nodes if you want</b></p>
+    <p style="font-family:'courier'"><b>root.addNext(node1)</b></p>
+    <p style="font-family:'courier'"><b>node1.addNext(node2)</b></p>
+    <p style="font-family:'courier'"><b>node2.addNext(node3)</b></p>
+    <p style="font-family:'courier'"><b>node3.addNext(node4)</b></p>
+    <p style="font-family:'courier'"><b>node4.addNext(node5)</b></p>
+    <p style="font-family:'courier'"><b>node5.addNext(node6)</b></p>
+    <p style="font-family:'courier'"><b>getlast(root,2); //you can change number 2</b></p>
+    <p style="font-family:'courier'"><b>root</b></p>
+    <p>To make root somewhat reader friendly, you can try putting into the console: <br><b style="font-family:'courier'">JSON.stringify(root)</b></p>
   </body>
 </html>
